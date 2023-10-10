@@ -1,6 +1,7 @@
 ---
 - name: deploy java application on 100s of production nodes
   get_url:
-    url: https://mys317june23.s3.us-east-2.amazonaws.com/login.war
-    dest: /opt/tomcat/webapps/login.war
-    force_basic_auth: yes
+    url: http://18.118.55.122:8082/artifactory/ansi/com/maha/mahaLogin/2.0/mahaLogin-2.0.war
+    dest: /opt/tomcat/webapps/mahaLogin-2.0.war
+    username: admin
+    password: Shiva1122
